@@ -3,7 +3,7 @@ const JOGADORAS_INICIAIS = [
     "nome": "Andressa Alves",
     "posicao": "Meio-campo",
     "clube": "Corinthians",
-    "foto": "https://example.com/andressa.jpg",
+    "foto": "img/AndressaAlves.webp",
     "gols": 15,
     "assistencias": 10,
     "jogos": 28,
@@ -13,7 +13,7 @@ const JOGADORAS_INICIAIS = [
     "nome": "Dayana Rodríguez",
     "posicao": "Meio-campo",
     "clube": "Corinthians",
-    "foto": "https://example.com/dayana.jpg",
+    "foto": "img/DayanaRodríguez.png",
     "gols": 5,
     "assistencias": 12,
     "jogos": 30,
@@ -23,7 +23,7 @@ const JOGADORAS_INICIAIS = [
     "nome": "Mariza",
     "posicao": "Zagueira",
     "clube": "Corinthians",
-    "foto": "https://example.com/mariza.jpg",
+    "foto": "img/Mariza.jpeg",
     "gols": 2,
     "assistencias": 1,
     "jogos": 32,
@@ -33,7 +33,7 @@ const JOGADORAS_INICIAIS = [
     "nome": "Thaís Regina",
     "posicao": "Zagueira",
     "clube": "Corinthians",
-    "foto": "https://example.com/thais.jpg",
+    "foto": "img/ThaísRegina.webp",
     "gols": 1,
     "assistencias": 2,
     "jogos": 25,
@@ -43,7 +43,7 @@ const JOGADORAS_INICIAIS = [
     "nome": "Letícia Teles",
     "posicao": "Zagueira",
     "clube": "Corinthians",
-    "foto": "https://example.com/leticia.jpg",
+    "foto": "img/LetíciaTeles.jpeg",
     "gols": 0,
     "assistencias": 0,
     "jogos": 18,
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('assistencias').value = j.assistencias;
       document.getElementById('jogos').value = j.jogos;
       document.getElementById('foto').value = j.foto;
-      document.getElementById('edit-index').value = idx;
+      document.getElementById('jogadora-index').value = idx;
       document.getElementById('cancel-edit').style.display = 'inline-block';
     }
     if (e.target.hasAttribute('data-del')) {
