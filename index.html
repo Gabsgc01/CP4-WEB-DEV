@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Jogadoras de Futebol Feminino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogadoras de Futebol Feminino</h1>
+    </header>
+    <main>
+        <section id="controls">
+            <input type="text" id="search" placeholder="Buscar por nome ou posição">
+            <select id="filter-clube">
+                <option value="">Filtrar por clube</option>
+            </select>
+            <button id="sort-nome">Ordenar por Nome</button>
+            <button id="sort-posicao">Ordenar por Posição</button>
+        </section>
+        
+        <section id="cards-section">
+                <div id="jogadoras-list">
+                </div>
+        </section>
+    </main>
+    <script src=app.js></script>   
+</body>
+</html>
