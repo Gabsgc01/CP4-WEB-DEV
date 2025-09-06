@@ -54,7 +54,15 @@
 
 ## 👩‍💻 Demonstração
 
-![Demo](https://user-images.githubusercontent.com/placeholder/demo.gif)
+![Demo](img/CPWEBDEV.PNG)
+
+
+---
+
+
+## 👨 Integrantes do Grupo
+
+- Gabriel Ciriaco RM:564880
 
 ---
 
