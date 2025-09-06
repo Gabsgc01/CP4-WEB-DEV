@@ -34,6 +34,13 @@
 
 ---
 
+
+## 🌐 Acesse o Site
+
+[https://gabsgc01.github.io/CP4-WEB-DEV/](https://gabsgc01.github.io/CP4-WEB-DEV/)
+
+---
+
 ## 📁 Estrutura dos Arquivos
 
 ```
