@@ -1,0 +1,193 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #7b1fa2;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#controls input, #controls select, #controls button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#controls button {
+    background: #7b1fa2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#controls button:hover {
+    background: #4a148c;
+}
+
+#form-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#jogadora-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+}
+#jogadora-form h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
+#jogadora-form div {
+    display: flex;
+    flex-direction: column;
+}
+#jogadora-form label {
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+#jogadora-form input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+#jogadora-form button {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: none;
+    background: #7b1fa2;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#jogadora-form button[type="button"] {
+    background: #ccc;
+    color: #333;
+    margin-left: 1rem;
+}
+#jogadora-form button:hover {
+    background: #4a148c;
+}
+
+#cards-section {
+    margin-top: 2rem;
+}
+
+#jogadoras-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: box-shadow 0.2s;
+}
+.card:hover {
+    box-shadow: 0 4px 16px rgba(123,31,162,0.15);
+}
+.card .favorita {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #ffd600;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.card .favorita.inativa {
+    color: #ccc;
+}
+.card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #7b1fa2;
+}
+.card h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.2rem;
+    color: #7b1fa2;
+}
+.card p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #444;
+}
+.card .stats {
+    margin-top: 0.7rem;
+    font-size: 0.95rem;
+    color: #333;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+.card .actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.7rem;
+}
+.card .actions button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background: #e1bee7;
+    color: #7b1fa2;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.card .actions button:hover {
+    background: #7b1fa2;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 0.3rem;
+    }
+    #jogadora-form {
+        grid-template-columns: 1fr;
+    }
+    #jogadoras-list {
+        grid-template-columns: 1fr;
+    }
+}
